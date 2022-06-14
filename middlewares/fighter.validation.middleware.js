@@ -1,5 +1,5 @@
 //const { fighter } = require('../models/fighter');
-const { validateFighter } = require('validators/fighter.validation');
+const { validateFighter } = require('./validators/fighter.validation');
 const { objectToString } = require('../helpers/objectToString');
 
 const createFighterValid = (req, res, next) => {

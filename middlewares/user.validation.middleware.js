@@ -1,5 +1,5 @@
 // const { user } = require('../models/user');
-const { validateUser } = require('validators/user.validation');
+const { validateUser } = require('./validators/user.validation');
 const { objectToString } = require('../helpers/objectToString');
 
 const createUserValid = (req, res, next) => {
@@ -17,7 +17,7 @@ const createUserValid = (req, res, next) => {
 };
 
 const updateUserValid = (req, res, next) => {
-	// TODO: Implement validatior for user entity during update
+	// TODO: Implement validator for user entity during update
 
 	const { errors, isValid } = validateUser(req.body);
 	if (!isValid) {
